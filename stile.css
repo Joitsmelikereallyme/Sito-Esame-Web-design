@@ -1,0 +1,342 @@
+ 
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    background-color: #aca1a1;
+}
+
+.intestazione {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #865757;
+    border-bottom: 2px solid #4e3c3c;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.contenitore-intestazione {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-marchio {
+    width: 60px;
+}
+
+
+.menu-principale {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-principale a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+.menu-a-tendina {
+    position: relative;
+}
+
+.pulsante-tendina {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contenuto-tendina {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #865757;
+    border: 1px solid #4e3c3c;
+    min-width: 170px;
+}
+
+.menu-a-tendina:hover .contenuto-tendina {
+    display: block;
+}
+
+.contenuto-tendina a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.contenuto-pagina {
+    margin-top: 140px;
+}
+
+.titolo-progetti {
+    text-align: center;
+}
+
+.sezione-progetto-singolo {
+     text-align: center;
+    max-width: 650px;
+    margin: 30px auto
+}
+
+
+
+.sezione-contatti {
+    max-width:520px;          
+    margin: 40px auto;         
+    padding: 25px;             
+    background: #ffffff;       
+    border-radius: 14px;       
+    text-align: center;        
+    font-size: 24px;           
+    font-weight: bold;
+    line-height: 1.6;         
+}
+
+
+.sezione-contatti ul {
+    list-style: none;          
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sezione-contatti li {
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+
+.sezione-contatti a {
+    color:#2a2a2a;
+    text-decoration: none;
+}
+
+.sezione-contatti a:hover {
+    text-decoration: underline;
+}
+
+
+
+.sezione-profilo {
+    text-align: center;
+}
+
+.foto-profilo {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+
+.presentazione {
+    text-align: center;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+
+.testo-presentazione {
+    font-size: 1.5rem;
+}
+
+ 
+.sezione-progetti {
+    text-align: center;
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottone-progetto {
+    display: flex;                     
+    justify-content: center;           
+    align-items: center;               
+
+    text-decoration: none;
+    color: #000;
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 0;
+    transition: 0.25s;
+    font-weight: 500;
+    width: auto;                 
+}
+
+.griglia-progetti {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.card-progetto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    transition: 0.25s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.card-progetto img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.card-progetto p {
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-progetto:hover {
+    transform: scale(1.03);
+    background: #865757;
+}
+
+@media (max-width: 768px) {
+    .griglia-progetti {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+}
+
+
+.bottone-progetto:hover {
+    background: #865757;
+}
+
+
+.piè-di-pagina {
+    text-align: center;
+    padding: 35px 0;
+}
+
+
+.immagine-progetto {
+    max-width: 700px;
+}
+
+
+@media (max-width: 768px) {
+
+    .contenitore-intestazione {
+        flex-direction: row;     
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;;
+    }
+
+    .menu-principale {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+.logo-marchio {
+    margin: 10px;
+    width: 40px;
+
+    
+}
+    .presentazione .testo-presentazione {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .bottone-progetto {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .foto-profilo {
+        max-width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .titolo-progetti {
+        font-size: 1.8rem;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+  
+    .sezione-progetto-singolo p {
+        font-size: 1rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    
+    .immagine-progetto {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+   
+    .contenuto-pagina {
+        margin-top: 120px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+
+  
+    .sezione-contatti {
+        width: 70%;
+        margin: 30px auto;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    
+    .sezione-contatti ul {
+        padding-left: 0;
+        margin: 15px 0;
+    }
+
+    .sezione-contatti li {
+        font-size: 1rem;
+        padding: 10px 0;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    
+    .sezione-contatti a {
+        font-size: 1rem;
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    
+    .contenuto-pagina {
+        margin-top: 120px;
+    }
+}

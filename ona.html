@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Onarataxia</title>
+</head>
+
+<body>
+    <header class="intestazione">
+        <div class="contenitore-intestazione">
+            <img src="assets/logoluna.png" alt="logo" class="logo-marchio">
+            <nav class="menu-principale">
+                <a href="index.html">Home</a>
+
+                <div class="menu-a-tendina">
+                    <button class="pulsante-tendina">Progetti▾</button>
+                    <div class="contenuto-tendina">
+                        <a href="ona.html">Onarataxia</a>
+                        <a href="portlayout.html">Portfolio Layout</a>
+                        <a href="posters.html">Posters</a>
+                    </div>
+                </div>
+
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenuto-pagina">
+        <h1 class="titolo-progetti">Onarataxia</h1>
+
+        <section class="sezione-progetto-singolo">
+            <p>Un progetto fotografico che esplora i concetti di alienazione e perdita del sé. Ho lavorato a questo progetto in modo molto casuale senza una vera e proprio organizzazione, non concentrandomi sulla tecnica. Almeno il concetto è interessante dai :P</p>
+
+            <img src="assets/ona1.jpg" alt="progetto onarataxia" class="immagine-progetto">
+            <img src="assets/ona2.jpg" alt="progetto onarataxia" class="immagine-progetto">
+        </section>
+    </main>
+
+    <footer class="piè-di-pagina">
+        <hr>
+        <img src="assets/logoluna.png" width="60" alt="logo">
+        <p>© 2025 Jo Bonaccorso</p>
+    </footer>
+
+ 
+    <script>
+        const btn = document.querySelector(".pulsante-tendina");
+        const menu = document.querySelector(".contenuto-tendina");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("aperto");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stile.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+
+    <header class="intestazione">
+        <div class="contenitore-intestazione">
+            <img src="assets/logoluna.png" alt="logo" class="logo-marchio">
+            <nav class="menu-principale">
+                <a href="#">Home</a>
+                <div class="menu-a-tendina">
+                    <button class="pulsante-tendina">Progetti▾</button>
+                    <div class="contenuto-tendina">
+                        <a href="ona.html">Onarataxia</a>
+                        <a href="portlayout.html">Portfolio Layout</a>
+                        <a href="posters.html">Posters</a>
+                    </div>
+                </div>
+
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenuto-pagina">
+
+      
+        <section class="sezione-profilo">
+            <img src="assets/IOO1.jpg" alt="foto profilo" class="foto-profilo">
+        </section>
+
+      
+        <section class="presentazione">
+            <h1 class="titolo-presentazione">
+                Il mio portfolio
+            </h1>
+
+            <p class="testo-presentazione">
+                Ciao! Sono Jo, studio all'Accademia di Belle Arti di Catania.
+               Faccio cose che per la maggior parte del tempo non piacciano neanche a me, ma guess what? Essere un creativo è un viaggio dove magari impari a non odiarti o almeno non odiare quello che fai. Mi occupo di grafiche (veramebte poco professionali), di video e di foto.           </p>
+        </section>
+
+       
+       <section class="sezione-progetti">
+    <h2 class="titolo-progetti">I miei progetti</h2>
+
+    <div class="griglia-progetti">
+
+        <a class="card-progetto" href="ona.html">
+            <img src="assets/ona1.JPG" alt="Onarataxia">
+            <p>Onarataxia</p>
+        </a>
+
+        <a class="card-progetto" href="portlayout.html">
+            <img src="assets/portlay.jpg" alt="Portfolio Layout">
+            <p>Portfolio Layout</p>
+        </a>
+
+        <a class="card-progetto" href="posters.html">
+            <img src="assets/shinjiposter.jpg" alt="Posters">
+            <p>Posters</p>
+        </a>
+
+    </div>
+</section>
+
+    </main>
+
+  
+    <footer class="piè-di-pagina">
+        <hr>
+        <img src="assets/logoluna.png" width="60" alt="logo">
+        <p>© 2025 Jo Bonaccorso</p>
+    </footer>
+
+<script>
+        const btn = document.querySelector(".pulsante-tendina");
+        const menu = document.querySelector(".contenuto-tendina");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("aperto");
+        });
+    </script>
+
+</body>
+
+</html>

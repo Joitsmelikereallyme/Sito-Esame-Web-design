@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+    <header class="intestazione">
+        <div class="contenitore-intestazione">
+            <img src="assets/logoluna.png" alt="logo" class="logo-marchio">
+            <nav class="menu-principale">
+                <a href="index.html">Home</a>
+
+<div class="menu-a-tendina">
+    <button class="pulsante-tendina">Progetti▾</button>
+    <div class="contenuto-tendina">
+        <a href="ona.html">Onarataxia</a>
+        <a href="portlayout.html">Portfolio Layout</a>
+        <a href="posters.html">Posters</a>
+    </div>
+</div>
+        <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <main class="contenuto-pagina">
+        <h1 class="titolo-progetti">Contatti</h1>
+
+        <section class="sezione-contatti">
+            <p>Puoi contattarmi qui:</p>
+            <ul>
+                <li>Email: jomail@mail.com</li>
+                <li>Instagram: @Jocose</li>
+                <li>Behance: behance/jocose.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="piè-di-pagina">
+        <hr>
+        <img src="assets/logoluna.png" width="60" alt="logo">
+        <p>© 2025 Jo Bonaccorso</p>
+    </footer>
+
+<script>
+        const btn = document.querySelector(".pulsante-tendina");
+        const menu = document.querySelector(".contenuto-tendina");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("aperto");
+        });
+    </script>
+
+</body>
+</html>
